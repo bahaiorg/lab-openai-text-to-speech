@@ -31,6 +31,10 @@ def main():
   if not user_file_name:
     user_file_name = "speech.mp3"
 
+  cost = 15.00 / 1000000 * len(user_input)
+  string_cost = "Cost $" + str(cost)
+  st.write(f":grey[{string_cost}]")
+
   # Convert button
   if st.button("Convert to Speech"):
     speech_file_path = text_to_speech(user_input, voice_type)
