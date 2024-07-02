@@ -9,7 +9,7 @@ def text_to_speech(text, voice_type="shimmer"):
   
   speech_file_path = Path(__file__).parent / "speech.mp3"
   response = client.audio.speech.create(
-    model="tts-1",
+    model="tts-1-hd",
     voice=voice_type,
     input=text
   )
