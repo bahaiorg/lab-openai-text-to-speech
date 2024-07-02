@@ -31,7 +31,7 @@ def main():
   if not user_file_name:
     user_file_name = "speech.mp3"
 
-  cost = 15.00 / 1000000 * len(user_input)
+  cost = 30.00 / 1000000 * len(user_input)
   string_cost = "Cost $" + str(cost)
   st.write(f":grey[{string_cost}]")
 
